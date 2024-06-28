@@ -25,7 +25,7 @@ public class ControllerMaster {
     }
     
     public static void setIcone(JFrame frame){
-        frame.setIconImage( Toolkit.getDefaultToolkit().getImage("D:/Arquivos/Documents/NetBeansProjects/Costuras/src/main/resources/IconeAplicacao.png") );
+        frame.setIconImage( Toolkit.getDefaultToolkit().getImage("D:/Arquivos/Documents/NetBeansProjects/Costureira/Costuras/src/main/resources/IconeAplicacao.png") );
         
     }
     
