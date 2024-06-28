@@ -1,0 +1,7 @@
+TestHelper\CriarContaHelperTest.class
+TestHelper\CriarTipoServicoHelperTest.class
+TestHelper\CriarClienteHelperTest.class
+TestHelper\EditarClienteHelperTest.class
+TestHelper\EditarServicoHelperTest.class
+TestHelper\LoginHelperTest.class
+TestHelper\CriarServicoHelperTest.class
