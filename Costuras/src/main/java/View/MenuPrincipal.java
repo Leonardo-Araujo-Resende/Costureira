@@ -414,6 +414,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         BotaoStatusPedido.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         BotaoStatusPedido.setForeground(new java.awt.Color(255, 255, 255));
         BotaoStatusPedido.setText("PEDIDO");
+        BotaoStatusPedido.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BotaoStatusPedido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotaoStatusPedidoActionPerformed(evt);
@@ -425,6 +426,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         BotaoStatusProntoEntrega.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         BotaoStatusProntoEntrega.setForeground(new java.awt.Color(255, 255, 255));
         BotaoStatusProntoEntrega.setText("PRONTO ENTREGA");
+        BotaoStatusProntoEntrega.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BotaoStatusProntoEntrega.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotaoStatusProntoEntregaActionPerformed(evt);
@@ -436,6 +438,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         BotaoStatusEntregue.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         BotaoStatusEntregue.setForeground(new java.awt.Color(255, 255, 255));
         BotaoStatusEntregue.setText("ENTREGUE");
+        BotaoStatusEntregue.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BotaoStatusEntregue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotaoStatusEntregueActionPerformed(evt);
@@ -707,6 +710,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void MenuItemEditarServicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemEditarServicosActionPerformed
         TodosPanels.setSelectedIndex(1);
+        mpEditarServicoControoler.atualizaTabela();
     }//GEN-LAST:event_MenuItemEditarServicosActionPerformed
 
     private void BotaoStatusEntregueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoStatusEntregueActionPerformed

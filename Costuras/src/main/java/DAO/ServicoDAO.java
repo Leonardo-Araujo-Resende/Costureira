@@ -343,7 +343,7 @@ public class ServicoDAO {
                 + "GROUP BY tipo "
                 + "ORDER BY quantidades desc;";
         
-        String tipoServicoMaisPedido = null;
+        String tipoServicoMaisPedido = "";
 
         try {
 

@@ -3,7 +3,10 @@ package Model;
 
 import DAO.ClienteDAO;
 
-
+/**
+ * Classe responsavel pela estrutura de dados do Cliente
+ * @author Léo
+ */
 public class Cliente extends Pessoa{
     
     private String telefone;

@@ -14,9 +14,13 @@ public class ConexaoBd {
     
     private static Connection conexao;
     
-    public static Connection getConexao() throws SQLException{
+    public static Connection getConexao(){
         if(conexao == null){
-            conexao = DriverManager.getConnection(URL, USUARIO, SENHA);
+            try {
+                conexao = DriverManager.getConnection(URL, USUARIO, SENHA);
+            } catch (SQLException ex) {
+                System.out.println("Erro na conexao como banco");
+            }
         }
         return conexao;
     }

@@ -102,7 +102,9 @@ public class MpClientesHelper {
             view.getTipoPrefLabel().setText("Tipo preferido: " +  tipoPreferido );
             
             Costureira costureiraPref = ServicoDAO.retornaCostureiraPreferidaDoCliente(pegaClienteSelecionado());
-            view.getCostureiraPrefLabel().setText("Costureira preferida: " + costureiraPref.getNome() );
+            if(costureiraPref != null){
+                view.getCostureiraPrefLabel().setText("Costureira preferida: " + costureiraPref.getNome() );
+            }
 
         } catch (SQLException ex) {
             Logger.getLogger(MpClientesHelper.class.getName()).log(Level.SEVERE, null, ex);

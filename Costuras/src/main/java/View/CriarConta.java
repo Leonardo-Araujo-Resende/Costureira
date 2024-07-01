@@ -55,6 +55,8 @@ public class CriarConta extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LabelNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 100, -1));
+
+        InputNome.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         getContentPane().add(InputNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 370, 50));
 
         LabelUsuario.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
@@ -66,6 +68,8 @@ public class CriarConta extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LabelUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 100, -1));
+
+        InputUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         getContentPane().add(InputUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 370, 50));
 
         BotaoEntrar.setBackground(new java.awt.Color(65, 105, 225));
@@ -84,12 +88,16 @@ public class CriarConta extends javax.swing.JFrame {
         LabelSenha.setForeground(new java.awt.Color(153, 153, 153));
         LabelSenha.setText("Senha");
         getContentPane().add(LabelSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 60, -1));
+
+        InputSenha.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         getContentPane().add(InputSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 370, 50));
 
         LabelConfirmaSenha.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         LabelConfirmaSenha.setForeground(new java.awt.Color(153, 153, 153));
         LabelConfirmaSenha.setText("Confirma Senha");
         getContentPane().add(LabelConfirmaSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 230, -1));
+
+        InputConfirmaSenha.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         getContentPane().add(InputConfirmaSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 370, 50));
 
         PainelFundo.setBackground(new java.awt.Color(0, 0, 0));

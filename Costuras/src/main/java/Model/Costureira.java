@@ -3,6 +3,11 @@ package Model;
 
 import java.util.Objects;
 
+
+/**
+ * Classe responsavel pela estrutura de dados da Costureira
+ * @author Léo
+ */
 public class Costureira extends Pessoa{
     
     private String login;

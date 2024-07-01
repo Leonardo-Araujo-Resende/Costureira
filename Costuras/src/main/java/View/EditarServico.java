@@ -62,7 +62,8 @@ public class EditarServico extends javax.swing.JFrame {
         BotaoCancelar = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(920, 375));
+        setMinimumSize(new java.awt.Dimension(950, 375));
+        setPreferredSize(new java.awt.Dimension(950, 375));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         IdServicoTitulo.setFont(new java.awt.Font("Segoe UI Black", 1, 36)); // NOI18N

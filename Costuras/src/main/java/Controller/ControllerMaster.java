@@ -1,19 +1,17 @@
-
 package Controller;
 
 import View.Login;
 import com.formdev.flatlaf.FlatDarkLaf;
-import java.awt.Toolkit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.ImageIcon;
 
 public class ControllerMaster {
     
-    public static void iniciarAplicacao(){
+    public static void iniciarAplicacao() {
 
         try {
             UIManager.setLookAndFeel(new FlatDarkLaf());
@@ -23,11 +21,9 @@ public class ControllerMaster {
         new Login().setVisible(true);
 
     }
-    
-    public static void setIcone(JFrame frame){
-        frame.setIconImage( Toolkit.getDefaultToolkit().getImage("D:/Arquivos/Documents/NetBeansProjects/Costureira/Costuras/src/main/resources/IconeAplicacao.png") );
-        
+
+    public static void setIcone(JFrame frame) {
+        frame.setIconImage( new ImageIcon(frame.getClass().getResource("/Imagens/IconeAplicacao.png")).getImage());
     }
-    
-    
+
 }

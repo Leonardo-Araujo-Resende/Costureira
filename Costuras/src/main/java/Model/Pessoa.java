@@ -1,8 +1,10 @@
 
 package Model;
 
-import java.util.Objects;
-
+/**
+ * Classe abstrata responsavel estrutura de dados da Pessoa
+ * @author Léo
+ */
 public abstract class Pessoa {
     
     private String nome;

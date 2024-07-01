@@ -32,7 +32,6 @@ public class CriarClienteHelper {
         if (getNome().equals("")) {
             throw new CampoNuloException("Preencha o campo NOME");
         }
-        
         if (getTelefone().equals("")) {
             throw new CampoNuloException("Preencha o campo TELEFONE");
         }
@@ -44,7 +43,10 @@ public class CriarClienteHelper {
         setEndereco("");
         setObservacao("");
     }
-
+    
+    /**
+     * 
+     */
     public void atualizaTabela(ArrayList<Cliente> clientes) {
         DefaultTableModel tableModel = (DefaultTableModel) view.getTabelaClientes().getModel();
 

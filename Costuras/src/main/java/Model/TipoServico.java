@@ -1,6 +1,9 @@
 package Model;
 
-
+/**
+ * Classe responsavel pela estrutura de dados Tipo de Servico oferecidos por uma costureira
+ * @author Léo
+ */
 public class TipoServico {
     private String tipo;
     private double valor;

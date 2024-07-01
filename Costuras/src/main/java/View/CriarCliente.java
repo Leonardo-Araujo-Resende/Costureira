@@ -103,6 +103,7 @@ public class CriarCliente extends javax.swing.JFrame {
         BotaoCriar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         BotaoCriar.setForeground(new java.awt.Color(255, 255, 255));
         BotaoCriar.setText("Criar");
+        BotaoCriar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BotaoCriar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotaoCriarActionPerformed(evt);
@@ -170,7 +171,7 @@ public class CriarCliente extends javax.swing.JFrame {
             TabelaClientes.getColumnModel().getColumn(3).setMaxWidth(250);
         }
 
-        getContentPane().add(ScrollPaneClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 910, 170));
+        getContentPane().add(ScrollPaneClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 900, 170));
 
         pack();
         setLocationRelativeTo(null);

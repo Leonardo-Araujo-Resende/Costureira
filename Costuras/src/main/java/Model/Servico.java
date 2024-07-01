@@ -4,6 +4,10 @@ package Model;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Classe responsavel pela estrutura de dados do Servico
+ * @author Léo
+ */
 public class Servico{
 
     private int id;

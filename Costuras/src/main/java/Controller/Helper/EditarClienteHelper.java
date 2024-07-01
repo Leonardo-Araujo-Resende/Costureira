@@ -13,6 +13,8 @@ public class EditarClienteHelper {
     }
     
     public Cliente recuperarCliente() throws CampoNuloException{
+        verificaValoresObrigatoriosPreenchidos();
+        
         int id = Integer.parseInt(getId());
         String nome = getNome();
         String telefone = getTelefone();
@@ -42,20 +44,21 @@ public class EditarClienteHelper {
         view.getInputObservacao().setText(observacao);
     }
     
-    public String getNome() throws CampoNuloException{
-        String nome = view.getInputNome().getText();
-        if(nome.isEmpty()){
-            throw new CampoNuloException("Campo NOME não pode estar vázio!");
-        }
-        return nome;
+    public String getNome(){
+        return view.getInputNome().getText();
     }
     
-    public String getTelefone() throws CampoNuloException{
-        String telefone = view.getInputTelefone().getText();
-        if(telefone.isEmpty()){
-            throw new CampoNuloException("Campo TELEFONE não pode estar vázio!");
+    public String getTelefone(){
+        return view.getInputTelefone().getText();
+    }
+    
+    public void verificaValoresObrigatoriosPreenchidos() throws CampoNuloException {
+        if (getNome().equals("")) {
+            throw new CampoNuloException("Preencha o campo NOME");
         }
-        return telefone;
+        if (getTelefone().equals("")) {
+            throw new CampoNuloException("Preencha o campo TELEFONE");
+        }
     }
     
     public String getEndereco(){
